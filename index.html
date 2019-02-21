@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>DrewskiDev.com</title>
+  <title>DrewskiDev</title>
   <meta name="description" content="Andrew Martinez's portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/styles.css">
@@ -13,10 +13,11 @@
   <header>
     <div class="navigation-container">
       <div id="nav-left">
-        <a href="#" id="navigation-logo">DrewskiDev</a>
-        <a href="#" class="navigation-item">item2</a>
-        <a href="#" class="navigation-item">item3</a>
-        <a href="#" class="navigation-item">item4</a>
+        <a href="/" id="navigation-logo" class="nav-active">DrewskiDev</a>
+        <a href="/pages/projects/" class="navigation-item">Projects</a>
+        <a href="/pages/snippets/" class="navigation-item">Snippets</a>
+        <a href="/pages/tools/" class="navigation-item">Tools</a>
+        <a href="/pages/contact/" class="navigation-item">Contact</a>
       </div>
       <div id="nav-hamburger">
         <div class="hamburger"></div>
@@ -25,8 +26,16 @@
       </div>
     </div>
   </header>
-  <main class="Site-content">Main Content</main>
-  <footer class="footer-container">Footer</footer>
+  <main class="Site-content">
+    <div class="homepage-hero">
+      <h1 class="hero-headline">Hello, My name is Andrew. I am...</h1>
+      <div class="hero-image-container">
+        <img class="hero-image-one" src="/assets/images/astronaut.svg" alt="">
+        <p class="hero-image-text">an Astronaut</p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-container">DrewskiDev&#169; 2019</footer>
   <script src="/js/responsive-nav.js"></script>
 </body>
 
