@@ -1,8 +1,7 @@
-// on hamburger click make menu appear
+// on hamburger click make nav appear
 let hamburger = document.querySelector('#nav-hamburger');
 let navLeft = document.querySelector('#nav-left');
 let navLeftItems = document.querySelectorAll('.navigation-item');
-
 
 hamburger.addEventListener('click', ResponsiveMenu);
 window.addEventListener('resize', ResetNav);

@@ -302,7 +302,7 @@ a:active {
   font-weight: bold;
   color: white;
   font-size: 2.2rem;
-  padding: 55px 0 0 35px;
+  padding: 55px 0 0 30px;
 }
 
 .hero-text-center {
@@ -322,14 +322,42 @@ a:active {
   padding-left: 15px;
 }
 
+/*Homepage About Me Section */
+
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 1.25rem 0;
+}
+
+.about-me-text-container {
+  width: 90%;
+  font-family: var(--paragraph-font);
+  font-size: 1.1rem;
+}
+
+.about-me-title {
+  font-family: var(--headline-font);
+  font-weight: bold;
+  color: var(--header-color-bg);
+  font-size: 2rem;
+}
+
+.about-me-image {
+  width: 250px;
+  height: auto;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
 /* Social Media Links */
 
 .social-media-title {
   font-family: var(--paragraph-font);
   text-align: center;
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #3b465e;
   margin-top: 10px;
 }
 
@@ -349,7 +377,7 @@ a:active {
 }
 
 .social-media-icon {
-  width: 50px;
+  width: 40px;
   height: auto;
 }
 
@@ -382,6 +410,9 @@ a:active {
   }
   .hero-headline {
     font-size: 2.25rem;
+  }
+  .about-me-text-container {
+    width: 80%;
   }
 }
 
@@ -416,6 +447,10 @@ a:active {
   }
   .job-title {
     font-size: 2.75rem;
+  }
+  .about-me-text-container {
+    width: 50%;
+    margin-left: 2rem;
   }
 }
 
