@@ -326,6 +326,7 @@ a:active {
 
 .about-me-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -338,7 +339,9 @@ a:active {
   font-size: 1.1rem;
 }
 
-.about-me-title {
+.about-me-title,
+.skills-title,
+.experience-title {
   font-family: var(--headline-font);
   font-weight: bold;
   color: var(--header-color-bg);
@@ -350,30 +353,68 @@ a:active {
   height: auto;
   box-shadow: var(--shadow);
   margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.skills-container,
+.experience-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Hire me links */
+
+.hire-me-container {
+  width: 90%;
+  margin: 35px auto 25px auto;
+}
+
+.hire-me-text {
+  font-family: var(--headline-font);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--footer-color-bg);
+  text-align: center;
+  line-height: 150%;
+}
+
+.button {
+  background-color: var(--danger);
+  padding: 0 5px 0 5px;
+  box-shadow: var(--shadow);
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: white;
+  display: inline-block;
+  transform: rotate(-2deg);
+  border-radius: 2px;
+}
+
+.button:hover {
+  font-weight: bold;
+  transform: rotate(-5deg);
 }
 
 /* Social Media Links */
-
-.social-media-title {
-  font-family: var(--paragraph-font);
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
 
 .social-media-links-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 2.5rem;
   margin-bottom: 10px;
 }
 
 .social-media-line {
   width: 25%;
-  background-color: black;
-  height: 1px;
+  background-color: var(--header-color-bg);
+  height: 2px;
   margin: 10px;
+  box-shadow: var(--shadow-lg);
+}
+
+.center-line {
+  width: 10%;
 }
 
 .social-media-icon {
@@ -451,6 +492,9 @@ a:active {
   .about-me-text-container {
     width: 50%;
     margin-left: 2rem;
+  }
+  #skills-section-one {
+    order: 2;
   }
 }
 
