@@ -158,6 +158,17 @@ a:active {
   text-decoration: none;
 }
 
+.hidden {
+  visibility: hidden;
+  transform: scale(.5);
+}
+
+.zoom {
+  transition: transform 1.2s;
+  visibility: visible;
+  transform: scale(1);
+}
+
 /* FLEXBOX STICKY FOOTER */
 
 .Site {
