@@ -11,9 +11,12 @@ function ResponsiveMenu() {
     if (item.classList.contains('responsive-nav-items')) {
       item.classList.remove('responsive-nav-items');
       navLeft.classList.remove('responsive-nav-items-container');
+    } else {
+      item.classList.add('responsive-nav-items')
+      navLeft.classList.add('responsive-nav-items-container')
     }
   })
-};
+}
 
 function ResetNav() {
   if (window.innerWidth >= 768) {
