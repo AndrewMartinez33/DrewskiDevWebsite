@@ -158,6 +158,10 @@ a:active {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .hidden {
   visibility: hidden;
   transform: scale(.5);
@@ -277,27 +281,56 @@ a:active {
 
 .hero-image-one-container {
   position: absolute;
-  bottom: 15%;
-  left: 2%;
+  bottom: 20%;
+  left: 100%;
   z-index: -1;
+  animation-name: astronautFloat;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes astronautFloat {
+  0% {
+    transform: translateX(0) rotate(0deg) scale(1)
+  }
+  50% {
+    transform: translateX(-400px) rotate(-250deg) scale(1.3)
+  }
+  100% {
+    transform: translateX(-700px) rotate(-500deg) scale(1.5)
+  }
 }
 
 .hero-image-two-container {
   position: absolute;
   bottom: 0;
   right: 15%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .hero-image-three-container {
   position: absolute;
   bottom: 45%;
   right: 15%;
-  z-index: -1;
+  z-index: -2;
+  animation-name: earthRotate;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes earthRotate {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
 }
 
 .hero-image-one {
-  width: 175px;
+  width: 125px;
 }
 
 .hero-image-two {
@@ -406,6 +439,7 @@ a:active {
   width: 90%;
   height: auto;
   margin-top: 3rem;
+  font-size: 2.2rem;
 }
 
 .work-title {
@@ -484,7 +518,11 @@ a:active {
 
 /* Extra small devices (portrait phones, 376px and up) */
 
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  .hero-image-one {
+    width: 150px;
+  }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 
@@ -492,9 +530,9 @@ a:active {
   .homepage-hero {
     height: 550px;
   }
-  .hero-image-one-container {
+  /* .hero-image-one-container {
     left: 10%;
-  }
+  } */
   .hero-image-two-container {
     right: 25%;
   }
@@ -502,7 +540,7 @@ a:active {
     bottom: 50%;
   }
   .hero-image-one {
-    width: 225px;
+    width: 175px;
   }
   .hero-image-two {
     width: 275px;
@@ -518,6 +556,17 @@ a:active {
   }
   .experience-title {
     width: 80%;
+  }
+  @keyframes astronautFloat {
+    0% {
+      transform: translateX(0) rotate(0deg) scale(1)
+    }
+    50% {
+      transform: translateX(-900px) rotate(-180deg) scale(1.3)
+    }
+    100% {
+      transform: translateX(-1800px) rotate(-360deg) scale(1.8)
+    }
   }
 }
 
@@ -539,7 +588,7 @@ a:active {
     display: inline-block;
   }
   .hero-image-one {
-    width: 225px;
+    width: 200px;
   }
   .hero-image-two {
     width: 325px;
@@ -567,6 +616,17 @@ a:active {
   #skills-section-one {
     order: 2;
   }
+  @keyframes astronautFloat {
+    0% {
+      transform: translateX(0) rotate(0deg) scale(1)
+    }
+    50% {
+      transform: translateX(-1000px) rotate(-180deg) scale(1.3)
+    }
+    100% {
+      transform: translateX(-2000px) rotate(-360deg) scale(1.9)
+    }
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -575,9 +635,9 @@ a:active {
   .homepage-hero {
     height: 600px;
   }
-  .hero-image-one-container {
+  /* .hero-image-one-container {
     left: 15%;
-  }
+  } */
   .hero-image-two-container {
     right: 20%;
   }
