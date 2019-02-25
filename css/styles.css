@@ -367,10 +367,57 @@ a:active {
   margin-left: 1rem;
 }
 
-.skills-container,
+/* .skills-container,
 .experience-container {
   display: flex;
   justify-content: center;
+} */
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.experience-img-container {
+  width: 250px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.experience-img {
+  width: 75%;
+  height: auto;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
+.experience-text-container {
+  width: 90%;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+  font-family: var(--paragraph-font);
+}
+
+.experience-title {
+  width: 90%;
+  height: auto;
+  margin-top: 3rem;
+}
+
+.work-title {
+  font-family: var(--headline-font);
+  color: var(--header-color-bg);
+  font-weight: bold;
+}
+
+.job-details {
+  font-family: var(--paragraph-font);
+  font-weight: 600;
+  color: var(--footer-color-bg);
 }
 
 /* Hire me links */
@@ -466,6 +513,12 @@ a:active {
   .about-me-text-container {
     width: 80%;
   }
+  .experience-text-container {
+    width: 80%;
+  }
+  .experience-title {
+    width: 80%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -503,6 +556,13 @@ a:active {
   .about-me-text-container {
     width: 50%;
     margin-left: 2rem;
+  }
+  .experience-text-container {
+    width: 50%;
+  }
+  .experience-title {
+    width: 50%;
+    text-align: center;
   }
   #skills-section-one {
     order: 2;
