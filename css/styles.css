@@ -125,7 +125,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.2;
 }
 
 ol,
@@ -347,6 +347,7 @@ body {
   color: white;
   font-size: 2.2rem;
   padding: 55px 0 0 30px;
+  line-height: 1;
 }
 
 .hero-text-center {
@@ -467,7 +468,7 @@ body {
   font-weight: bold;
   color: var(--footer-color-bg);
   text-align: center;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .button {

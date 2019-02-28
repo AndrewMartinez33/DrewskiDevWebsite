@@ -1,0 +1,138 @@
+:root {
+  --header-color-bg: #42a5f5;
+  --footer-color-bg: #263238;
+  --headline-font: Arial, Helvetica, sans-serif;
+  --paragraph-font: Georgia, 'Times New Roman', Times, serif;
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --danger: #ff4444;
+  --danger-dark: #CC0000;
+  --warning: #ffbb33;
+  --warning-dark: #FF8800;
+  --success: #00C851;
+  --success-dark: #007E33;
+  --info: #33b5e5;
+  --info-dark: #0099CC;
+}
+
+.contact-header-container {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.contact-image-bg {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+}
+
+.contact-image-balloon {
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 40%;
+  z-index: 2;
+  position: absolute;
+  animation-name: balloonFloat;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes balloonFloat {
+  0% {
+    transform: translateX(0px)
+  }
+  100% {
+    transform: translateX(-120%)
+  }
+}
+
+.contact-title-container {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contact-title {
+  color: white;
+  font-size: 3em;
+  text-shadow: 5px 5px 15px black;
+  animation-name: titleFloat;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  font-family: var(--paragraph-font);
+}
+
+@keyframes titleFloat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small */
+
+@media (min-width: 400px) {}
+
+/* Small devices */
+
+@media (min-width: 576px) {
+  .contact-title {
+    font-size: 4em;
+  }
+}
+
+/* Medium devices */
+
+@media (min-width: 768px) {
+  .contact-title {
+    font-size: 5em;
+  }
+}
+
+/* Large devices */
+
+@media (min-width: 992px) {
+  .contact-title {
+    font-size: 5em;
+  }
+}
+
+/* Extra large */
+
+@media (min-width: 1200px) {}
+
+/* Super large */
+
+@media (min-width: 1500px) {}
