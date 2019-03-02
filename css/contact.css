@@ -78,7 +78,7 @@
 .contact-title {
   color: white;
   font-size: 3em;
-  text-shadow: 5px 5px 15px black;
+  text-shadow: 5px 5px 10px black;
   animation-name: titleFloat;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -99,6 +99,102 @@
   }
 }
 
+/* CONTACT FORM */
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+#form-title-container {
+  width: 90%;
+  margin-bottom: 35px;
+  font-family: var(--paragraph-font);
+  color: var(--footer-color-bg);
+}
+
+#form-title {
+  font-size: 5rem;
+  color: var(--header-color-bg);
+}
+
+#form-text {
+  font-size: 1.5rem;
+}
+
+#form-phone-number {
+  font-size: 1rem;
+  font-family: var(--headline-font);
+  color: rgb(71, 71, 71);
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+form {
+  width: 90%;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+#email,
+#name,
+#subject,
+#message {
+  border-bottom: 2px solid var(--header-color-bg);
+  padding: 0 5px 5px 5px;
+  font-family: var(--headline-font);
+  width: 100%;
+  margin-bottom: 30px;
+  height: 1rem;
+}
+
+#email:focus,
+#name:focus,
+#subject:focus,
+#message:focus {
+  transition: 1s ease-in-out;
+  background-color: var(--header-color-bg);
+  color: white;
+  box-shadow: var(--shadow);
+  height: 2rem;
+  border-radius: 1px;
+  padding: 0 0 10px 10px;
+}
+
+#message:focus {
+  padding: 10px 0 10px 10px;
+  height: 3.25rem;
+  transition: 1s ease-in-out;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: white;
+  font-weight: bold;
+  vertical-align: baseline;
+}
+
+#contact-submit {
+  border: none;
+  padding: 10px;
+  background: var(--danger);
+  box-shadow: var(--shadow);
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#contact-submit:hover {
+  background: var(--danger-dark);
+}
+
 /* MEDIA QUERIES */
 
 /* Extra small */
@@ -109,7 +205,11 @@
 
 @media (min-width: 576px) {
   .contact-title {
-    font-size: 4em;
+    font-size: 3em;
+  }
+  #form-title-container,
+  form {
+    width: 80%;
   }
 }
 
@@ -117,21 +217,31 @@
 
 @media (min-width: 768px) {
   .contact-title {
-    font-size: 5em;
+    font-size: 4em;
+  }
+  #form-title-container,
+  form {
+    width: 70%;
   }
 }
 
 /* Large devices */
 
 @media (min-width: 992px) {
-  .contact-title {
-    font-size: 5em;
+  #form-title-container,
+  form {
+    width: 60%;
   }
 }
 
 /* Extra large */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  #form-title-container,
+  form {
+    width: 50%;
+  }
+}
 
 /* Super large */
 
