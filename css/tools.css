@@ -45,7 +45,7 @@
 
 .tools-menu li:hover {
   background-color: var(--danger);
-  transform: rotate(-1.5deg);
+  transform: rotate(-3deg);
 }
 
 .tools-active {
@@ -73,6 +73,8 @@
   font-size: 2rem;
   font-weight: bold;
   margin: 2rem 0 2rem 0;
+  width: 90%;
+  text-align: center;
 }
 
 /* Search FORM */
@@ -145,6 +147,13 @@
     opacity: 1;
     transform: scale(1);
   }
+}
+
+/* Javascript Page */
+
+#page-javascript,
+#page-sql {
+  width: 95%;
 }
 
 /* YOUTUBE CHANNELS */
