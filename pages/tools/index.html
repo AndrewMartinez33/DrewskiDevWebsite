@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../css/styles.css">
   <link rel="stylesheet" href="../../css/tools.css">
+  <link rel="stylesheet" href="../../css/prism.css">
 </head>
 
 <body class="Site">
@@ -58,9 +59,177 @@
         </ul>
       </div>
       <div id="container-javascript" class="tools-page">
+        <h2 class="tools-page-content-title">JavaScript Notes</h2>
         <ul id="page-javascript">
-          <div class="coming-soon">
-            Coming Soon
+          <div class="javascript-notes">
+            <h3>TYPES</h3>
+            <pre><code class="language-javascript">
+              // number
+              // string
+              // boolean
+              // undefined - a variable that is created but is not assigned a value
+              // null - signifies an intentional absence of data
+              // symbol
+              // object
+            </code></pre>
+            <h3>TYPE OF KEYWORD</h3>
+            <pre><code class="language-javascript">
+              typeof 5; // returns the data type, this returns 'number'
+            </code></pre>
+            <h3>VARIABLES</h3>
+            <pre><code class="language-javascript">
+              var a = 0;    // function scope, no block scope, hoisted to top, stop using
+              let a = 0;    // block scope
+              const a = 0;  // block scope, does not change
+            </code></pre>
+            <h3>COERCION</h3>
+            <p>coercion is the process of converting a value from one type to another</p>
+            <pre><code class="language-javascript">
+              // foo is coerced to true
+              if ('foo') {
+                return;
+              }
+
+              // 5 is corced to a string, resulting in '5hi'
+              5 + 'hi';
+            </code></pre>
+            <h3>DOUBLE AND TRIPLE EQUALS</h3>
+            <pre><code class="language-javascript">
+              ==  // Loose, checks that both values are equal, allows type coercion
+              === // Strict, checks that both values are equal, no type coercion
+            </code></pre>
+            <h3>TRUTHY and FALSEY VALUES</h3>
+            <pre><code class="language-javascript">
+              // In JS there are 6 falsey values. They are coerced to false in a boolean expression
+              // All other values are truthy and are coerced to true
+              
+              0;
+              ('');
+              null;
+              undefined;
+              false;
+              NaN; 
+            </code></pre>
+            <h3>NOT, OR, AND OPERATORS</h3>
+            <pre><code class="language-javascript">
+              !     // Not Operator, flips a boolean value. !! double flips
+              ||    // Or Operator, returns true if either condition is true
+              &&    // And Operator, return true if both conditions are true
+            </code></pre>
+            <h3>IF/ ELSE IF/ ELSE</h3>
+            <pre><code class="language-javascript">
+              if (conditionTrue) {
+                return "dosomething";
+              } else if (conditionTrue) {
+                return "do something";
+              } else {
+                return "just do this";
+              }
+            </code></pre>
+            <h3>SWITCH STATEMENTS</h3>
+            <pre><code class="language-javascript">
+              //The switch expression is evaluated once.
+              switch( expression ){
+                case n:
+                  code block;
+                  break;
+                case n:
+                  //The value of the expression is compared with the values of each case.
+                  code block;
+                  break;
+                case n:
+                  //If there is a match, the associated block of code is executed.
+                  code block;
+                  break;
+                default:
+                  code block;
+              }
+            </code></pre>
+            <h3>LOOPS</h3>
+            <pre><code class="language-javascript">
+              // for loop
+              for (let i = 0; i < 10; i++) {
+                someCode;
+              }
+
+              // while loop
+              while (condition) {
+                someCode;
+              }
+
+              // do while loop
+              do {
+                someCode;
+              } while (condition);
+
+              // for in loop
+              // interates over object's properties
+              for (let key in object) {
+                console.log(key);
+              }
+
+              // for of loop
+              // iterates over object's values
+              for (let value of object) {
+                console.log(value);
+              }
+
+            </code></pre>
+            <h3>Array.forEach(func)</h3>
+            <pre><code class="language-javascript">
+              // Executes provided function for each item in an array
+              array.forEach((item) => {
+                someCode;
+              })
+            </code></pre>
+            <h3>FUNCTIONS</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>ARRAYS</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>OBJECTS</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>THIS KEYWORD</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>ADVANCED ARRAYS</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>ADVANCED FUNCTIONS</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>ADVANCED OBJECTS</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>CLASSES</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>OBJECT ORIENTED PROGRAMMING</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>The DOM</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>JSON</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
+            <h3>AJAX</h3>
+            <pre><code class="language-javascript">
+              coming soon;
+            </code></pre>
           </div>
         </ul>
       </div>
@@ -80,8 +249,11 @@
       </div>
       <div id="container-sql" class="tools-page">
         <ul id="page-sql">
-          <div class="coming-soon">
-            Coming Soon
+          <div class="">
+            <h3>SQL TITLE</h3>
+            <pre><code class="language-sql">
+                coming soon;
+            </code></pre>
           </div>
         </ul>
       </div>
@@ -215,6 +387,7 @@
   <script src="../../js/responsive-nav.js"></script>
   <script src="../../js/tools.js"></script>
   <script src="../../js/colors.js"></script>
+  <script src="../../js/prism.js"></script>
 </body>
 
 </html>
