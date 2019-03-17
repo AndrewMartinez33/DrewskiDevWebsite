@@ -24,7 +24,7 @@ function zoomWhenInView() {
     //if the element is within the boundaries of the viewport
     if (distances.top >= 0 &&
       distances.left >= 0 &&
-      distances.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      distances.bottom <= (window.innerHeight || document.documentElement.clientHeight) + (distances.height / 2) &&
       distances.right <= (window.innerWidth || document.documentElement.clientWidth)) {
       element.classList.add('zoom');
     }
