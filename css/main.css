@@ -442,7 +442,7 @@ textarea {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   margin: 1rem 0;
 }
 
