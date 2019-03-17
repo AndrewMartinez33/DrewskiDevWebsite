@@ -39,6 +39,13 @@
   font-size: 1.25rem;
 }
 
+.project-img {
+  width: 75%;
+  height: auto;
+  box-shadow: var(--shadow);
+  margin: 1rem 0;
+}
+
 /* MEDIA QUERIES */
 
 /* Extra small devices (portrait phones, 376px and up) */
