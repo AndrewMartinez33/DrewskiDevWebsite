@@ -627,7 +627,8 @@ textarea {
 .callToAction-img {
   position: absolute;
   bottom: 0;
-  width: 100vw;
+  left: 0;
+  right: 0;
   height: auto;
   z-index: 10;
 }
