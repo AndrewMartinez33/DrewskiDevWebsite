@@ -95,12 +95,12 @@
 }
 
 #tools-form-title {
-  font-size: 5rem;
+  font-size: 3rem;
   color: var(--header-color-bg);
 }
 
 #tools-form-text {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #page-color-chart {
@@ -219,3 +219,36 @@
   display: flex;
   justify-content: center;
 }
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (portrait phones, 376px and up) */
+
+@media (min-width: 400px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  #tools-form-title {
+    font-size: 5rem;
+  }
+  #tools-form-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+/* Extra large desktops (large desktops, 1500px and up) */
+
+@media (min-width: 1500px) {}
