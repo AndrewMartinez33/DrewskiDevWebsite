@@ -84,6 +84,7 @@
 
 .hero-image-two {
   width: 250px;
+  display: block;
 }
 
 .hero-image-three {
