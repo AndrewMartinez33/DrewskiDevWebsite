@@ -37,6 +37,7 @@
   font-family: var(--paragraph-font);
   color: var(--footer-color-bg);
   font-size: 1.25rem;
+  line-height: 1.2;
 }
 
 .project-img {
@@ -44,6 +45,10 @@
   height: auto;
   box-shadow: var(--shadow);
   margin: 1rem 0;
+}
+
+.project-link {
+  color: var(--header-color-bg);
 }
 
 /* MEDIA QUERIES */
@@ -65,9 +70,6 @@
 @media (min-width: 992px) {
   .project-title {
     font-size: 5rem;
-  }
-  .project-subtitle {
-    font-size: 1.5rem;
   }
 }
 
