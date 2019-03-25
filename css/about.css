@@ -109,10 +109,8 @@
 }
 
 .job-title {
-  font-family: cursive;
   transform: rotate(-2deg);
   display: inline-block;
-  font-weight: 100;
   font-size: 2.5rem;
   padding-left: 15px;
 }
