@@ -22,7 +22,7 @@
 .blog-hero-container {
   width: 100%;
   position: relative;
-  height: 350px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,13 +71,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 90vw;
   height: auto;
   padding: 1.5rem 0;
   box-shadow: var(--shadow);
   z-index: 100;
   background-image: linear-gradient(90deg, var(--header-color-bg) 40%, #5f91fd 100%);
-  transform: rotate(-1deg);
   animation-name: blogHeroBox;
   animation-delay: 4s;
   animation-duration: 2s;
@@ -98,7 +97,7 @@
 }
 
 .blog-title-box {
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: var(--headline-font);
   font-weight: bold;
   color: white;
@@ -110,8 +109,8 @@
 }
 
 .blog-subtitle-top {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.75rem;
+  /* font-weight: bold; */
   align-self: flex-start;
   line-height: .5;
 }
@@ -122,6 +121,59 @@
   align-self: flex-end;
 }
 
+/* TOPICS */
+
+.topics-container {
+  width: 100%;
+}
+
+.topics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.topics li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--danger);
+  width: auto;
+  height: 2rem;
+  color: white;
+  font-family: var(--headline-font);
+  font-weight: bold;
+  padding: 0 1rem;
+  margin: .5rem .5rem;
+  box-shadow: var(--shadow);
+}
+
+/* BLOG MESSAGE */
+
+.blog-message {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-message-title,
+.blog-message-subtitle {
+  font-family: var(--headline-font);
+  font-weight: bold;
+  color: gray;
+  line-height: 1.5;
+}
+
+.blog-message-title {
+  font-size: 2rem;
+}
+
 /* MEDIA QUERIES */
 
 /* Extra small devices (portrait phones, 376px and up) */
@@ -130,19 +182,38 @@
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  .blog-hero-box {
+    width: 60vw;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .blog-title-box {
+    font-size: 4rem;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .blog-hero-box {
+    width: 50vw;
+  }
+  .blog-title-box {
+    font-size: 4rem;
+  }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .blog-hero-box {
+    width: 40vw;
+  }
+}
 
 /* Extra large desktops (large desktops, 1500px and up) */
 
