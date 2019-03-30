@@ -342,6 +342,7 @@ textarea {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -646,9 +647,11 @@ textarea {
   .hero-title {
     font-size: 3.5rem;
   }
+
   .our-services-title {
     font-size: 2.75rem;
   }
+
   .callToAction-title {
     font-size: 1.75rem;
   }
@@ -660,6 +663,7 @@ textarea {
   .service-container {
     width: 40%;
   }
+
   .callToAction-title {
     font-size: 2.5rem;
   }
@@ -671,9 +675,11 @@ textarea {
   .navigation-item {
     display: inline-flex;
   }
+
   #nav-hamburger {
     display: none;
   }
+
   .navigation-item:hover {
     font-weight: bold;
     box-shadow: var(--shadow);
@@ -682,12 +688,15 @@ textarea {
     transform: rotate(-3deg);
     display: inline-block;
   }
+
   .callToAction-title {
     font-size: 2.7rem;
   }
+
   .callToAction-text-container {
     justify-content: center;
   }
+
   .callToAction-box {
     display: flex;
     flex-direction: column;
@@ -706,12 +715,15 @@ textarea {
     width: 80%;
     font-size: 1.75rem;
   }
+
   .hero-title {
     font-size: 4.25rem;
   }
+
   .callToAction-box {
     width: 55vw;
   }
+
   .callToAction-container {
     margin: 0;
   }
@@ -723,9 +735,11 @@ textarea {
   .hero-text {
     width: 60%;
   }
+
   .callToAction-box {
     width: 45vw;
   }
+
   .callToAction-title {
     font-size: 3rem;
   }
