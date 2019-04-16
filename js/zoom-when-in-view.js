@@ -1,5 +1,5 @@
-window.addEventListener('scroll', zoomWhenInView);
 window.addEventListener('load', zoomWhenInView);
+window.addEventListener('scroll', zoomWhenInView);
 
 
 function zoomWhenInView() {
